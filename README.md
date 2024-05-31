@@ -1,6 +1,5 @@
+###                                                                                                                         Deployed Link : https://flixxit-i4on.onrender.com/
 # Flixxit:                                                                                           
-
-                                                                                                                                        ### Deployed Link : https://flixxit-i4on.onrender.com/
                         
 Flixxit aims to be a comprehensive web application, inspired by the leading OTT platforms such as Netflix, Prime Video, and AppleTV+. This project focuses on delivering core user functionality with a simplified and intuitive user experience. Below is an outline of the key features that Flixxit will offer:
 
