@@ -1,0 +1,161 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 75vh;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 75vh;
+  filter: brightness(0.8);
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #ff464f;
+}
+
+.slide .play-button {
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.855);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+}
+
+.detail-span {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: #e50914;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn2 {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .slide img {
+    height: auto;
+  }
+
+  .slide .play-button {
+    font-size: 1.2rem;
+  }
+
+  .detail-span {
+    font-size: 2rem;
+  }
+  
+  .slide .play-button {
+    width: 50%;
+    left: 30%;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide img {
+    height: auto;
+  }
+
+  .slide .play-button {
+    font-size: 1rem;
+  }
+
+  .detail-span {
+    font-size: 1rem;
+  }
+  
+  .slide .play-button {
+    width: 50%;
+    left: 30%;
+  }
+  
+  .btn {
+    padding: 6px;
+    font-size: 0.5rem;
+  }
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-player-wrapper {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ff464f;
+}
