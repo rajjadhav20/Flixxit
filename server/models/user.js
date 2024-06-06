@@ -7,7 +7,7 @@ const UserSchema = mongoose.Schema(
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     preference: { type: String, default: "28" },
-    membership: { type: String, required: "NotPlus" },
+    membership: { type: String, default: "NotPlus" },
   },
   {
     timestamps: true,
